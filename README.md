@@ -2,7 +2,7 @@
 This is a Electron app
 ----------------------
 
-![Screenshot](Screenshot.png)
+![Screenshot](image/Screenshot.png)
 How to Use?
 -----------
 
