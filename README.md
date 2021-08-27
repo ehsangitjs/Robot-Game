@@ -3,6 +3,7 @@ This is a Electron app
 ----------------------
 
 ![Screenshot](image/Screenshot.png)
+
 How to Use?
 -----------
 
