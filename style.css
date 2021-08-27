@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body,.main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    text-align: center;
+    display: none;
+}
+.error h1{
+    color: crimson;
+    margin: 15px;
+}
+.error a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #6a6afe;
+}
+.point{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: rgb(27, 27, 27);
+}
+.help{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url('image/help.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.helpText{
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    padding: 5px;
+    border-radius: 100px;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    background-color: #6a6afe;
+    display: none;
+}
+.reload{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+    background-image: url('image/reload.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 0px 0px 3px black;
+}
+.line{
+    width: 100%;
+    height: 220px;
+    border-bottom: 2px rgb(27, 27, 27) solid;
+    position: relative;
+}
+.robot{
+    width: 100px;
+    height: 60%;
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+    background-image: url('image/robot.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.anime{
+    animation: robot ease-out 0.7s;
+}
+.color{
+    color: rgb(243, 47, 40);
+}
+.wall{
+    position: absolute;
+    right: -50px;
+    bottom: 0px;
+    width: 50px;
+    height: 55px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 100% 100% 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: wall 2s linear infinite;
+}
+.wall span{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+@keyframes robot {
+    0%{
+        bottom: -20px;
+    }
+    50%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: -20px;
+    }
+}
+@keyframes wall {
+    0%{
+        /* transform: translateX(0); */
+        right:-70px ;
+    }
+    100%{
+        /* transform: translateX(-850px); */
+        right: 850px;
+    }
+}

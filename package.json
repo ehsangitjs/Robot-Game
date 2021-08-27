@@ -1,0 +1,14 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "This Is A Game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./"
+  },
+  "author": "Ehsan",
+  "license": "ISC",
+    "devDependencies": {
+    "electron": "^13.2.1"
+  }
+}
