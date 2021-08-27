@@ -1,6 +1,7 @@
 # Robot-Game
 This is a Electron app
 ----------------------
+
 ![Screenshot](Screenshot.png)
 How to Use?
 -----------
