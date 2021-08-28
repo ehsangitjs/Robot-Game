@@ -9,4 +9,4 @@ How to Use?
 
 create an electron app and copy files in your project
 
-###### This is not good in Web
+###### *This is not good in Web
