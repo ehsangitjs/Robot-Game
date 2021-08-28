@@ -13,15 +13,11 @@ body,.main{
     overflow: hidden;
     flex-direction: column;
     position: relative;
+    background-color: rgb(235, 235, 235);
     z-index: 1;
 }
 .main{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(235, 235, 235);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 2;
 }
 .error{
     position: absolute;
@@ -31,21 +27,26 @@ body,.main{
     z-index: 3;
     text-align: center;
     display: none;
+    z-index: 3;
 }
 .error h1{
     color: crimson;
-    margin: 15px;
+    margin-bottom: 10px;
 }
 .error a{
     text-decoration: none;
     font-size: 20px;
     color: #6a6afe;
 }
-.point{
+.score{
     position: absolute;
     right: 30px;
     top: 30px;
     color: rgb(27, 27, 27);
+}
+.scoreText{
+    color: coral;
+    margin-bottom: 10px;
 }
 .help{
     position: absolute;
