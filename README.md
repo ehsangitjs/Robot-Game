@@ -4,7 +4,7 @@ This is a Electron app
 
 ![Screenshot](image/Screenshot.png)
 
-### This is a Game.like the T-rex
+### This is a Game.it like the T-rex
 
 How to Use?
 -----------
